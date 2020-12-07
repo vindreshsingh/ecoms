@@ -1,0 +1,34 @@
+.progress-bar-container {
+	background: linear-gradient(90deg, #051102 0%, #0eda41 24%, #1a3805 50%, #539bfb 78%, #de46fc 100%);
+	width: 100%;
+	height: 4px;
+	position: fixed;
+	top: 65px;
+	overflow: hidden;
+	margin: 0px;
+	z-index: 9;
+}
+
+.progress-bar-container .progress-bar-line {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0.8;
+	background: linear-gradient(90deg, #de46fc 0%, #539bfb 24%, #95fb52 50%, #f8fb50 78%, #fb3f3f 100%);
+	animation-name: progress;
+	animation-duration: 1.5s;
+	animation-iteration-count: infinite;
+	transform: translateX(10%);
+}
+
+@keyframes progress {
+	from {
+		transform: translateX(0%);
+	}
+
+	to {
+		transform: translateX(100%);
+	}
+}

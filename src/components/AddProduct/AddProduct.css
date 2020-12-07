@@ -1,0 +1,115 @@
+.add-product-container {
+	align-self: center;
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.add-product-container .heading {
+  font-size: 4rem;
+  font-weight: bold;
+	padding: 3%;
+  color: rgb(207, 13, 13);
+  text-shadow:1px 2px rgb(216, 215, 215);
+}
+
+.add-product-container form {
+	width: 80%;
+	margin: 0px;
+	padding: 0px;
+	margin-bottom: 40px;
+}
+
+.add-product-container form .input-container {
+	display: flex;
+	flex-direction: column;
+	margin: 3% 0%;
+	font-size: 1.4rem;
+  padding: 1% 0%;
+  font-weight: bolder;
+	color: rgb(238, 240, 238);
+}
+
+.add-product-container form .input-container input[type='number'] {
+	-moz-appearance: textfield;
+}
+
+.add-product-container form .input-container input {
+	height: 1.8rem;
+  border: 2px solid rgb(149, 177, 149);
+  background-color: rgb(38, 39, 35);
+  color: whitesmoke;
+	padding: 1%;
+	font-size: 1.2rem;
+	border-radius: 10px;
+}
+
+.add-product-container form .input-container input:focus {
+	outline: none;
+	border: 2.5px solid #30a513;
+}
+
+.add-product-container form .input-container textarea {
+	height: 6rem;
+  border: 2px solid rgb(149, 177, 149);
+  background-color: rgb(38, 39, 35);
+  color: whitesmoke;
+	padding: 1%;
+	font-size: 1.2rem;
+	border-radius: 10px;
+}
+
+.add-product-container form .input-container textarea:focus {
+	outline: none;
+	border: 2.5px solid #25ca33;
+}
+
+.add-product-container form button {
+	padding: 1.5%;
+	width: 20%;
+	color: rgb(9, 9, 43);
+	font-weight: bold;
+	font-size: 1.5rem;
+	background: #80b924;
+	box-shadow: 0px 0px 2px 2px #f5f1f1;
+	border: none;
+	cursor: pointer;
+	border-radius: 50px;
+}
+
+.add-product-container form button:focus {
+	outline: none;
+	background: #055209;
+	box-shadow: 0px 0px 2px 2px #e7e4e4;
+}
+
+@media screen and (max-width: 1180px) {
+	.add-product-container {
+		width: 60%;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.add-product-container {
+		width: 65%;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.add-product-container {
+		width: 75%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.add-product-container {
+		width: 85%;
+	}
+}
+
+@media screen and (max-width: 520px) {
+	.add-product-container {
+		width: 95%;
+	}
+}

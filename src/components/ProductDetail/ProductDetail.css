@@ -1,0 +1,110 @@
+.product-detail-container {
+	align-self: center;
+	display: flex;
+  width: 40%;
+  
+	background-color: #113507c4;
+  flex-direction: column;
+  box-shadow: 0px 0px 4px 4px rgb(135, 133, 145);
+}
+
+.product-detail-container .heading {
+	text-align: center;
+  font-size: 3rem;
+  font-weight: 100;
+	padding: 5%;
+  color: rgb(77, 90, 20);
+  text-shadow:2px 3px rgb(135, 133, 145);
+}
+
+.product-detail-container .img-container {
+	align-self: center;
+	width: 50%;
+  height: 14rem;
+
+}
+
+.product-detail-container .img-container img {
+	height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 3px 3px 2px 3px rgb(80, 73, 73);
+}
+
+.product-detail-container .creadential-container {
+	color: rgb(216, 139, 25);
+	margin: 3%;
+	font-size: 1.4rem;
+	background: #4a424d;
+	padding: 2%;
+	border-radius: 10px;
+  display: flex;
+  text-shadow: 2px 2px rgb(83, 8, 8);
+  justify-content: space-between;
+  box-shadow:2px 2px rgb(135, 133, 145);
+}
+
+.product-detail-container .detail-container .detail {
+	width: 240%;
+}
+
+.product-detail-container .detail-container .text {
+	text-align: justify;
+}
+
+.product-detail-container .button {
+	margin-bottom: 50px;
+	width: 50%;
+	padding: 2%;
+	align-self: center;
+	font-size: 1.2rem;
+	color: rgb(201, 133, 15);
+	background-color: #363230;
+	font-weight: bold;
+	outline: none;
+  border: none;
+  border-radius: 50px;
+	box-shadow: 0px 0px 2px 2px #c5c5ad;
+	cursor: pointer;
+}
+
+.product-detail-container button:active {
+	background-color: #07630b;
+	box-shadow: 0px 0px 2px 2px rgb(116, 17, 94);
+}
+
+@media screen and (max-width: 1100px) {
+	.product-detail-container {
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.product-detail-container {
+		width: 60%;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.product-detail-container {
+		width: 70%;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.product-detail-container {
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.product-detail-container {
+		width: 80%;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.product-detail-container {
+		width: 98%;
+	}
+}

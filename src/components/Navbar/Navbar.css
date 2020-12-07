@@ -1,0 +1,143 @@
+.navbar-container {
+	background-image: linear-gradient(to right, #041a02, #3ca50c, #063817);
+	height: 70px;
+	font-weight: bolder;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.2rem;
+	width: 100%;
+	position: fixed;
+	top: 0;
+  z-index: 9;
+  opacity: 0.9;
+  box-shadow: 1px 2px rgb(240, 7, 7);
+}
+
+.navbar-container .navbar-logo {
+	justify-self: start;
+	font-size: 2rem;
+	margin-left: 15px;
+	color: rgb(19, 182, 204);
+	margin-left: 20px;
+  cursor: pointer;
+  text-shadow:1px 2px rgb(245, 6, 6);
+}
+
+.navbar-container .navbar-logo > a {
+	color: inherit;
+	text-decoration: none;
+	font-size: inherit;
+}
+
+.navbar-container .menu-icon {
+	display: none;
+	font-size: 2.8rem;
+	color: rgb(78, 8, 67);
+	cursor: pointer;
+}
+
+.navbar-container .navbar-menu {
+	display: grid;
+	grid-template-columns: repeat(5, auto);
+	grid-gap: 10px;
+	list-style: none;
+	width: 70vw;
+	text-align: center;
+	justify-content: end;
+    /* margin-right: 1.5rem; */;
+}
+
+.navbar-container .cart {
+	background-color: #360321;
+  border-radius: 10px;
+  box-shadow:1px 1px 1px 2px  rgb(156, 152, 156);
+}
+
+.navbar-container .cart span {
+	margin-left: 5px;
+}
+
+.navbar-container .navbar-links {
+	color: rgb(17, 168, 228);
+	padding: 0.5rem 1rem;
+  text-decoration: none;
+  text-shadow: 1px 2px rgb(173, 14, 14);
+}
+
+.navbar-container .navbar-links:hover {
+	background-color: rgb(167, 102, 17);
+	border-radius: 10px;
+	transition: 0.3s background-color ease-in-out;
+	box-shadow: 1px 2px 4px 2px #4b8db9;
+	cursor: pointer;
+}
+
+.navbar-container .user-name:hover {
+	cursor: default;
+	background: transparent;
+}
+
+@media screen and (max-width: 960px) {
+	.navbar-container {
+		position: fixed;
+		top: 0;
+	}
+
+	.navbar-container ul {
+		padding-left: 0;
+	}
+
+	.navbar-container .navbar-menu {
+		display: flex;
+		flex-direction: column;
+		grid-gap: 0;
+		width: 100%;
+		position: absolute;
+		top: 45px;
+		left: -118%;
+		opacity: 1;
+      /* transition: all 0.5s ease-in; */;
+	}
+
+	.navbar-container .active {
+    background-image: linear-gradient(to right, #041a02, #3ca50c, #063817);
+		left: 0;
+		opacity: 1;
+		transition: all 0.5s ease-in;
+		z-index: 1;
+	}
+
+	.navbar-container .navbar-links {
+		text-align: center;
+		padding: 1rem;
+		width: 96%;
+		display: table;
+	}
+
+	.navbar-container .navbar-links:hover {
+		background: #065c03;
+		border-radius: 0;
+	}
+
+	.navbar-container .user-name {
+		display: none;
+	}
+
+	.navbar-container .navbar-logo {
+		position: absolute;
+		top: 0;
+		left: 0;
+		transform: translate(20%, 36%);
+	}
+
+	.navbar-container .menu-icon {
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 0;
+		transform: translate(-100%, 40%);
+		font-size: 2rem;
+		cursor: pointer;
+	}
+}
